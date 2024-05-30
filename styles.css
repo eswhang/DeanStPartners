@@ -1,0 +1,53 @@
+.garamond-font {
+    font-family: 'Garamond', serif;
+    font-size: 3em; /* Increase the font size */
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.fade-in {
+    animation: fadeIn 5s ease-in-out forwards;
+}
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+.fade-out {
+    animation: fadeOut 5s ease-in-out forwards;
+}
+.footer-text, .nav-link {
+    font-size: 0.9em; /* Adjust to your preference */
+}
+.layered-text {
+    position: relative;
+    z-index: 1;
+}
+.layered-text h1 {
+    position: relative;
+    z-index: 2;
+    color: black;
+}
+.layered-text::before {
+    font-family: 'Garamond', serif;
+    content: "DSP";
+    font-size: 20em;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: grey;
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.1);
+}
+.layered-text:hover::before {
+    color: rgb(37, 137, 110); /* Change to your preferred hover color */
+}
+#logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
