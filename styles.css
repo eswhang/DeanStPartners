@@ -1,6 +1,9 @@
 .garamond-font {
     font-family: 'Garamond', serif;
-    font-size: 3em; /* Increase the font size */
+}
+.title-font {
+    font-size: 3em;
+    font-family: 'Garamond', serif;
 }
 @keyframes fadeIn {
     0% {opacity: 0;}
@@ -17,7 +20,8 @@
     animation: fadeOut 5s ease-in-out forwards;
 }
 .footer-text, .nav-link {
-    font-size: 0.9em; /* Adjust to your preference */
+    font-size: 1em; 
+    font-family: 'Garamond', serif;
 }
 .layered-text {
     position: relative;
@@ -50,4 +54,45 @@
     align-items: center;
     height: 100%;
     width: 100%;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 300px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    margin-bottom: 15px;
+}
+
+.form-input label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
