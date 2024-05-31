@@ -5,27 +5,55 @@
     <title>About</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.125.2/build/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.125.2/examples/js/loaders/GLTFLoader.js"></script>
+    <style>
+        body {
+            overflow-y: scroll;
+        }
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        .block {
+            height: 1000px; /* Adjust this value as needed */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-y: auto; /* Add this to make the block contents scrollable if they exceed the height */
+        }
+    </style>
 </head>
 <body style="background: linear-gradient(to bottom, rgba(240, 215, 159, 0.974), white); min-height: 100vh; margin: 0;">
-    <div style="display: flex; justify-content: center; align-items: center; height: calc(100vh - 60px);">
-        <div class="layered-text">
-            <!-- Replace this with the content you want to display on the "About" page -->
-            <h1>About Us</h1>
-            <p>We invest in software and established businesses.</p>
-        </div>
+    <div class="block">
+        <h1>Investing in the Future</h1>
+        <p>At Dean Street Partners, we believe in investing in the future. Our team of experts is dedicated to identifying innovative opportunities and helping our clients make informed investment decisions. Whether it's technology, renewable energy, or emerging markets, we are committed to creating sustainable growth and maximizing returns for our clients.</p>
     </div>
-    <script src="3DRotate.js"></script>
-    <div style="height: 60px;"></div> <!-- Spacer -->
-    <nav class="navbar navbar-light" style="position: fixed; bottom: 0; width: 100%; display: flex; justify-content: center; align-items: center; font-size: 16px; z-index: 1;">
-        <div class="d-flex justify-content-center px-5">
-            <a class="nav-link garamond-font" href="investors.html" style="color: black; padding: 30px;">Investors</a>
-            <a class="nav-link garamond-font" href="about.html" style="color: black; padding: 30px;">About the Firm</a>
-            <a class="nav-link garamond-font" href="contact.html" style="color: black; padding: 30px;">Contact</a>
+    <div class="block">
+        <h2 style="font-size: 48px;">Philosophy</h2>
+        <div class="row">
+            <div class="col">
+                <p>Responsibility</p>
+            </div>
+            <div class="col">
+                <p>Modernity</p>
+            </div>
+            <div class="col">
+                <p>Risk Management</p>
+            </div>
         </div>
-    </nav>
+    </div></div>
+    <div class="block">
+        <!-- Content for block 3 -->
+    </div>
+    <div class="block">
+        <!-- Content for block 4 -->
+    </div>
 </body>
-</html>
+</html></div>
