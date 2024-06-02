@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Investor Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.125.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.125.2/examples/js/loaders/GLTFLoader.js"></script>
 </head>
-<body>
+<body style="background: linear-gradient(to bottom, rgba(240, 215, 159, 0.974), white); min-height: 100vh; margin: 0; display: flex; justify-content: center; align-items: center;">
     <div class="container">
-        <form class="login-form" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
-            <h2>Login</h2>
+        <form class="login-form" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
             <div class="form-input">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
+                <div class="form-input" style="text-align: center;">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
             </div>
             <div class="form-input">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
+                <div class="form-input" style="text-align: center;">
+                    <label for="username">Password</label>
+                    <input type="text" id="password" name="password" required>
+                </div>
             </div>
-            <button type="submit">Login</button>
+            <button type="submit" class="login-button">Login</button>
         </form>
     </div>
-    </div>
-    </div>
+    <footer>
+        <a href="index.html" class="footer-text garamond-font" style="position: absolute; bottom: 70px; right: 50%; color: black; transform: translateX(50%); font-size: 22px; text-decoration: none;">Dean Street Partners</a>
+        <div class="footer-text garamond-font" style="position: absolute; bottom: 40px; right: 50%; color: black; transform: translateX(50%); font-size: 11px;">New York, New York</div>
+    </footer>
 </body>
 </html>
