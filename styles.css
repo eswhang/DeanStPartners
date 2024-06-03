@@ -23,6 +23,7 @@
     font-size: 1em; 
     font-family: 'Garamond', serif;
     color: black;
+    position: center;
 }
 .layered-text {
     position: relative;
@@ -64,11 +65,9 @@ body {
     margin: 0;
     font-family: 'Garamond', serif;
 }
-
 .container {
     width: 300px;
 }
-
 .login-form {
     display: flex;
     flex-direction: column;
@@ -97,6 +96,9 @@ body {
     border: none;
     border-radius: 4px;
     cursor: hand;
+}
+.nav-link.garamond-font {
+    position: center;
 }
 .nav-link.garamond-font:hover{
     color: #949697; 
@@ -143,3 +145,38 @@ body {
     align-items: center;
     padding: 20px; /* Add some padding */
 }
+.custom-navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    z-index: 1;
+}
+
+.custom-navbar .nav-link {
+    padding: 30px;
+}
+
+@media (max-width: 768px) {
+    .layered-text::before {
+        font-size: 10em; /* Adjust this value as needed */
+    }
+}
+
+@media (max-width: 768px) {
+    #logoContainer {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .my-script {
+        width: 100%;
+        height: auto;
+    }
+}
+
