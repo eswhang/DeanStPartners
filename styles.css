@@ -113,3 +113,14 @@ body {
     align-items: center;
     overflow-y: auto; /* Add this to make the block contents scrollable if they exceed the height */
 }
+.contact-text {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contact-containter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
